@@ -1,0 +1,24 @@
+{
+  "name": "telegram-ai-bot",
+  "description": "Telegram botu - Yapay zekâ destekli, gizli /hell komutlu",
+  "repository": "https://github.com/kullanici/telegram-ai-bot",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Telegram bot token",
+      "required": true
+    },
+    "HUGGINGFACE_API_KEY": {
+      "description": "Hugging Face API anahtarı",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Telegram kullanıcı ID (sadece izin verilen kullanıcı)",
+      "required": true
+    }
+  }
+}
